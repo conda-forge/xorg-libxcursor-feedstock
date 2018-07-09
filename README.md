@@ -14,14 +14,16 @@ Summary: The X.org mouse cursor control library.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/xorg-libxcursor-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/xorg-libxcursor-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/xorg-libxcursor-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/xorg-libxcursor-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/xorg-libxcursor-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/xorg-libxcursor-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/xorg-libxcursor-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/xorg-libxcursor-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/xorg-libxcursor-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/xorg-libxcursor-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/xorg-libxcursor-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/xorg-libxcursor-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/xorg-libxcursor/badges/version.svg)](https://anaconda.org/conda-forge/xorg-libxcursor)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/xorg-libxcursor/badges/downloads.svg)](https://anaconda.org/conda-forge/xorg-libxcursor)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-xorg--libxcursor-green.svg)](https://anaconda.org/conda-forge/xorg-libxcursor) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/xorg-libxcursor.svg)](https://anaconda.org/conda-forge/xorg-libxcursor) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/xorg-libxcursor.svg)](https://anaconda.org/conda-forge/xorg-libxcursor) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/xorg-libxcursor.svg)](https://anaconda.org/conda-forge/xorg-libxcursor) |
 
 Installing xorg-libxcursor
 ==========================
