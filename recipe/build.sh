@@ -48,18 +48,19 @@ if [ -n "$CYGWIN_PREFIX" ] ; then
 fi
 
 export PKG_CONFIG_LIBDIR=$uprefix/lib/pkgconfig:$uprefix/share/pkgconfig
+
+# set icondir and cursorpath manually so:
+#  1) System /usr paths are included in addition to local user and conda prefix
+#  2) A consistent path style is used so prefix replacement works, especially on Windows
 configure_args=(
     --prefix=$mprefix
     --disable-static
     --disable-dependency-tracking
     --disable-selective-werror
     --disable-silent-rules
+    --with-icondir="$uprefix/share/icons"
+    --with-cursorpath="~/.local/share/icons:~/.icons:$uprefix/share/icons:$uprefix/share/pixmaps:/usr/share/icons:/usr/share/pixmaps"
 )
-
-if [ -n "$CYGWIN_PREFIX" ] ; then
-    # Another path-like variable that needs custom setup
-    configure_args+=(--with-cursorpath="~/.icons:$uprefix/share/icons:$uprefix/share/pixmaps")
-fi
 
 ./configure "${configure_args[@]}"
 make -j$CPU_COUNT
