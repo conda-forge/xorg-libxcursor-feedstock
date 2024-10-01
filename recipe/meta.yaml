@@ -1,8 +1,8 @@
 {% set xorg_name = "libXcursor" %}
 {% set xorg_category = "lib" %}
 {% set name = "xorg-" ~ xorg_name %}
-{% set version = "1.2.0" %}
-{% set sha256 = "3ad3e9f8251094af6fe8cb4afcf63e28df504d46bfa5a5529db74a505d628782" %}
+{% set version = "1.2.2" %}
+{% set sha256 = "53d071bd2cc56e517a30998d5e685c8a74556ddada43c6985d14da9a023a88ee" %}
 {% set am_version = "1.15" %} # keep synchronized with build.sh
 
 package:
@@ -10,11 +10,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://www.x.org/releases/individual/{{ xorg_category }}/{{ xorg_name }}-{{ version }}.tar.bz2
+  url: https://www.x.org/releases/individual/{{ xorg_category }}/{{ xorg_name }}-{{ version }}.tar.xz
   sha256: {{ sha256 }}
 
 build:
-  number: 2
+  number: 0
   detect_binary_files_with_prefix: true
   run_exports:
     - {{ pin_subpackage(name|lower) }}
