@@ -14,7 +14,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   run_exports:
     - {{ pin_subpackage(name|lower) }}
 
@@ -29,6 +29,7 @@ requirements:
     - m2-base                      # [win]
     - make                         # [unix]
     - m2-make                      # [win]
+    - gnuconfig  # [unix]
     - {{ compiler("c") }}          # [unix]
     - {{ stdlib("c") }}            # [unix]
     - {{ compiler("m2w64_c") }}    # [win]
@@ -41,6 +42,7 @@ requirements:
     - xorg-libxfixes 6.*
     - xorg-libxrender 0.9.*
     - xorg-util-macros
+    - xorg-xorgproto
   run:
     - {{ pin_compatible('xorg-libx11') }}
 
