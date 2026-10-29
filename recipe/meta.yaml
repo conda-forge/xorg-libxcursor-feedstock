@@ -42,6 +42,7 @@ requirements:
     - xorg-libxfixes 6.*
     - xorg-libxrender 0.9.*
     - xorg-util-macros
+    - xorg-xorgproto
   run:
     - {{ pin_compatible('xorg-libx11') }}
 
